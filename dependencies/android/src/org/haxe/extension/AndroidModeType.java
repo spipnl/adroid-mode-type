@@ -6,7 +6,7 @@ import android.content.Context;
 /**
  * Class used to read the ModeType from the mainContext
  *
- * @author  spipnl (Jip Spinnewijn
+ * @author  spipnl (Jip Spinnewijn)
  * @version 1.0
  * @since   2015-01-28
  */
@@ -21,6 +21,7 @@ public class AndroidModeType extends Extension
     {
         UiModeManager uiModeManager = (UiModeManager) mainContext.getSystemService(Context.UI_MODE_SERVICE);
         int currentModeType = (int)uiModeManager.getCurrentModeType();
+
 		return currentModeType;
 	}
 }

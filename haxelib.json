@@ -2,12 +2,11 @@
   "name": "android-mode-type",
   "url": "https://github.com/spipnl/adroid-mode-type",
   "license": "MIT",
-  "tags": [],
+  "tags": ["openfl", "android"],
   "description": "Retrieve the Mode Type when running on Android. Used to check if running on Android TV.",
   "version": "1.0.0",
   "releasenote": "",
   "contributors": ["spipnl"],
   "dependencies": {
-
   }
 }
