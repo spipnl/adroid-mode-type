@@ -43,7 +43,7 @@ class AndroidModeType
 	
 	#if (android && openfl)
 	
-	private static var get_android_mode_type = JNI.createStaticMethod("org.haxe.extension.AndroidModeType", "getAndroidModeType", "()I");
+	private static var get_android_mode_type = JNI.createStaticMethod("nl.spip.extension.AndroidModeType", "getAndroidModeType", "()I");
 	
 	#end
 }

@@ -1,7 +1,9 @@
-package org.haxe.extension;
+package nl.spip.extension;
 
 import android.app.UiModeManager;
 import android.content.Context;
+
+import org.haxe.extension.Extension;
 
 /**
  * Class used to read the ModeType from the mainContext

@@ -6,6 +6,6 @@
 	<!-- Use the following for an Android Java extension, not needed otherwise -->
 	
 	<dependency name="androidmodetype" path="dependencies/android" if="android" />
-	<android extension="org.haxe.extension.AndroidModeType" />
+	<android extension="nl.spip.extension.AndroidModeType" />
 	
 </project>
