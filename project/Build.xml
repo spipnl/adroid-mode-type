@@ -1,5 +1,7 @@
 <xml>
 	
+	<set name="PLATFORM" value="android-14" if="android" />
+	
 	<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
 	
 	<set name="SLIBEXT" value=".a" unless="windows"/>
