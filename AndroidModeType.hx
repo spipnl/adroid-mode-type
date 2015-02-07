@@ -12,14 +12,7 @@ import openfl.utils.JNI;
 class AndroidModeType
 {
     /**
-     * Declare constant for mode type checking according to Android API
-     * 
-     * https://developer.android.com/reference/android/content/res/Configuration.html#UI_MODE_TYPE_TELEVISION
-     */
-    public static inline var UI_MODE_TYPE_TELEVISION = 4;
-    
-    /**
-     * Retrieves the Mode Type from Java and checks if it is equal to Android TV
+     * Call the native Android 'isAndroidTV' to check if running on Android TV
      * 
      * @return Boolean whether the app is running on Android TV
      */
@@ -31,10 +24,7 @@ class AndroidModeType
         // Only make the native call if running on Android
         #if (android && openfl)
         
-        var androidModeType:Int = get_android_mode_type();
-        if (androidModeType == UI_MODE_TYPE_TELEVISION) {
-            result = true;
-        }
+        result = is_android_tv();
         
         #end
         
@@ -43,7 +33,7 @@ class AndroidModeType
     
     #if (android && openfl)
     
-    private static var get_android_mode_type = JNI.createStaticMethod("nl.spip.extension.AndroidModeType", "getAndroidModeType", "()I");
+    private static var is_android_tv = JNI.createStaticMethod("nl.spip.extension.AndroidModeType", "isAndroidTV", "()Z");
     
     #end
 }
